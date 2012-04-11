@@ -1,0 +1,22 @@
+[class*="$APPID$"] .content > .tabs{
+	margin: 1em;
+}
+
+[class*="$APPID$"] [id^=pref-]{
+	padding: 1em;
+	margin: 1em;
+	/*
+	border: 1px blue solid;
+	border-radius: 10px;*/
+}
+
+[class*="$APPID$"] .button-apply{
+	position: absolute;
+	right: 2em;
+	bottom: 2em;
+}
+
+[class*="$APPID$"] [id^=pref-],
+[class*="$APPID$"] .groupbox{
+	line-height: 1.8;
+}

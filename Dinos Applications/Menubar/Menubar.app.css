@@ -1,0 +1,47 @@
+/* Menubar */
+
+/* main（メニューバー本体） */
+#menubar > ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1.5em;
+	z-index: 0;
+}
+#menubar > ul > li{
+	float: left;
+}
+#menubar > ul > li.menubar-rightmenu{
+	float: right;
+}
+
+#menubar > ul > li > a{
+	padding: 0.25em 0.5em;
+	border: none;
+}
+#menubar > ul,
+#menubar > ul > li,
+#menubar > ul > li > a{
+	background-color: #efefef;
+	background-image: linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+}
+#menubar > ul > li > a.hasChild:after{
+	content: '';
+}
+
+/* sub */
+#menubar li > ul{
+	top: 100% !important;
+	left: 0 !important;
+}
+#menubar > ul > li.menubar-rightmenu > ul{
+	left: auto !important;
+	right: 0;
+}
+
+/* sub-sub */
+#menubar li > ul > li > ul{
+	top: -3px !important;
+	left: 95% !important;
+}

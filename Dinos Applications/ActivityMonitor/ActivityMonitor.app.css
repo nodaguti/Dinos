@@ -1,0 +1,7 @@
+[class*="$APPID$"] .content{
+	padding: 1.5em;
+	line-height: 1.5;
+}
+[class*="$APPID$"] .menubar{
+	border-bottom: none;
+}

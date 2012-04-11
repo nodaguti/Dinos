@@ -1,0 +1,10 @@
+[class*="$APPID$"] .content{
+	background-color: #afafaf;
+}
+[class*="$APPID$"] .menubar{
+	border-bottom: none;
+}
+[class*="$APPID$"] .audioplayer-audio{
+	margin: 0 auto;
+	display: block;
+}

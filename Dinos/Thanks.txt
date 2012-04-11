@@ -1,0 +1,37 @@
+[Libraries]
+* uuQuery.js (http://code.google.com/p/uupaa-js-spinoff/)
+   uupaa (http://d.hatena.ne.jp/uupaa/)
+
+* uuStorage.js (http://code.google.com/p/uupaa-js-spinoff/)
+   uupaa (http://d.hatena.ne.jp/uupaa/)
+
+* JSDeferred (http://cho45.stfuawsc.com/jsdeferred/)
+   cho45 (http://www.lowreal.net/)
+
+* JSZip (http://jszip.stuartk.co.uk/)
+   Stuart Knightley (http://stuartk.co.uk/)
+   
+* UKI (http://ukijs.org/)
+   Vladimir Kolesnikov
+   
+* xcss.js (https://github.com/ofk/xcssjs/)
+   ofk (http://d.hatena.ne.jp/ofk/)
+
+[Images]
+* Licence Icons Set (http://www.iconeasy.com/iconset/licence-icons/)
+   Aerotox (http://aerotox.deviantart.com/)
+
+* Archives Icons Set (http://www.iconeasy.com/iconset/archives-icons/)
+   ialaddin (http://ialaddin.deviantart.com/)
+   
+* Crystal (http://www.everaldo.com/crystal/)
+   Everaldo Coelho (http://www.everaldo.com/)
+   
+* resize.png (/System/Library/WidgetResources/resize.png on Mac OSX 10.4.3 or later)
+   Apple Inc. (http://www.apple.com/)
+
+[Special Thanks]
+* Signal (http://d.hatena.ne.jp/t_Signal/)
+* Kamo-jii
+* Konbu Technical Works
+* Mozilla Developer Center and Mozilla Developer Newtwork (http://developer.mozilla.com/)

@@ -1,0 +1,103 @@
+/*
+.finder-icon,
+.finder-icon *{
+outline: 1px red solid;
+}
+*/
+
+.finder-icon{
+	position: absolute;
+	padding-bottom: 2em;
+	text-align: center;
+	font-size: 13px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.finder-icon.selected{
+	outline: 2px blue solid;
+}
+.finder-icon.dragging{
+	z-index: 999999 !important;
+	outline: 2px red solid;
+}
+.finder-icon-image{
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+.finder-icon-name{
+	width: 100%;
+	text-shadow: black 1px 1px 2px, black -1px -1px 2px;
+	color: white;
+	margin: auto;
+	cursor: default;
+}
+input.finder-icon-name{
+	text-shadow: none;
+	color: black;
+	margin: 0;
+}
+
+
+/* Icon Images */
+.finder-icon-image{
+	background-image: url(imgs/icons/unknown.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 100%;
+}
+.finder-icon[folder] .finder-icon-image{
+	background-image: url(imgs/icons/folder.png);
+}
+.finder-icon[folder][name="Dinos"] .finder-icon-image{
+	background-image: url(imgs/icons/folder_home.png);
+}
+.finder-icon[folder][name="Applications"] .finder-icon-image{
+	background-image: url(imgs/icons/folder_applications.png);
+}
+.finder-icon[folder][name="Documents"] .finder-icon-image{
+	background-image: url(imgs/icons/folder_documents.png);
+}
+.finder-icon[folder][name="Desktop"] .finder-icon-image{
+	background-image: url(imgs/icons/folder_desktop.png);
+}
+.finder-icon[name$='txt'] .finder-icon-image{
+	background-image: url(imgs/icons/txt.png);
+}
+.finder-icon[name$='html'] .finder-icon-image,
+.finder-icon[name$='htm'] .finder-icon-image{
+	background-image: url(imgs/icons/html.png);
+}
+
+.pref-finder-hidden-dotfile .finder-icon[name^='.']{
+	display: none;
+}
+
+/* Finder window */
+[class*="$APPID$"].finder-content-window > .menubar{
+	height: 2.6em;
+}
+[class*="$APPID$"] .finder-path{
+	float: left;
+	padding: 1px;
+	width: 90%;
+	height: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+[class*="$APPID$"] .finder-icon-name{
+	color: black;
+	text-shadow: white 1px 1px 2px, white -1px -1px 2px;
+}
+[class*="$APPID$"] .content{
+	position: relative;
+}
+[class*="$APPID$"] .content-wrapper{
+	position: relative;
+	overflow: auto;
+}
+
+/* Info window */
+.finder-window-info p{
+	margin: 1em;
+}

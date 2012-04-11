@@ -1,0 +1,39 @@
+[class*="$APPID$"] .content{
+	margin: 1.5em;
+	line-height: 1.5;
+}
+
+[class*="$APPID$"] input{
+	width: 80%;
+}
+
+[class*="$APPID$"] .softwareinstaller-button-ok{
+	margin-right: 2.5em;
+	margin-top: -1em;
+	text-align: right;
+}
+
+[class*="$APPID$"] table{
+	border: 1px solid black;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1em;
+}
+[class*="$APPID$"] td,
+[class*="$APPID$"] tr{
+	border: 1px solid black;
+	padding: 5px;
+}
+[class*="$APPID$"] [class^=softwareinstaller-appInfo-]:focus,
+[class*="$APPID$"] [class^=softwareinstaller-appInfo-]:hover{
+	outline: 1px blue dashed;
+}
+[class*="$APPID$"] [class^=softwareinstaller-appInfo-],
+[class*="$APPID$"] [class^=softwareinstaller-appInfo-] *{
+	width: 100%;
+	height: 1.5em;
+	border: none;
+	outline: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}

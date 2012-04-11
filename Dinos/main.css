@@ -1,0 +1,528 @@
+/** Reset Browser Default Styles **/
+html,body,div,dl,dt,dd,ul,ol,li,/*h1,h2,h3,h4,h5,h6,*/pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset,img { 
+	border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: normal;
+}
+ol,ul {
+	list-style: none;
+	list-style-position:  inside;
+}
+ul.hasmarker {
+	list-style-type: circle;
+}
+ol.hasmarker {
+	list-style-type: decimal;
+}
+ul.hasmarker > li,
+ol.hasmarker > li{
+	margin: 0.5em 0;
+}
+caption,th {
+	text-align: left;
+}
+/*
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+*/
+abbr,acronym {
+	border: 0;
+}
+img {
+	vertical-align: bottom;
+}
+input,textarea {
+	font-size: 100%;
+}
+
+body{
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+*{
+	line-height: 1.0;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#display{
+	background-color: skyblue;
+	background-image: url(imgs/bg.gif);
+	background-size: 100% 100%;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+hr{
+	width: 85%;
+}
+
+
+/** Button Restyle **/
+[class^=button]{
+	appearance: none;
+	margin: 0;
+	padding: 0;
+	color: white;
+	background: #313131;
+	outline: 1px #bbb solid;
+	border: none;
+	font-size: 12px;
+	width: auto;
+}
+[class^=button] *{
+	margin: 0;
+	padding: 0;
+}
+[class^=button]:active{
+	background: #616161;
+}
+
+
+/** 汎用class **/
+.unselectable{
+	user-select: none;
+}
+
+.ellipsis{
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	-moz-binding: url(Libraries/ellipsis.xml#ellipsis);
+}
+
+.headline-with-underline{
+	border-bottom: black 1px solid;
+	padding-bottom: 5px;
+	width: 95%;
+}
+
+
+/* Booting Window */
+#dinos-booting-background{
+	width: 100%;
+	height: 100%;
+	background-color: skyblue;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+}
+#dinos-booting-window{
+	border: 1px black solid;
+	background-color: white;
+	position: absolute;
+	min-width: 400px;
+	min-height: 100px;
+	overflow: auto;
+	text-align: center;
+	opacity: 0.85;
+	white-space:nowrap;
+	
+	/* xcss.jsはまだ読み込まれていない */
+	box-shadow: #515151 5px 5px 15px, #515151 -5px 5px 15px;
+	-moz-box-shadow: #515151 5px 5px 15px, #515151 -5px 5px 15px;
+	-webkit-box-shadow: #515151 5px 5px 15px, #515151 -5px 5px 15px;
+	-o-box-shadow: #515151 5px 5px 15px, #515151 -5px 5px 15px;
+	-ms-box-shadow: #515151 5px 5px 15px, #515151 -5px 5px 15px;
+}
+#dinos-booting-message{
+	display: inline-block;
+	font-size: 90%;
+}
+
+
+/** joWindow **/
+.window{
+	position: absolute;
+	background-color: #fff;
+	border: black 1px solid;
+	box-sizing: border-box;
+}
+.window > .menubar{
+	height: 1.4em;
+	background-color: #afafaf;
+	border-bottom: 1px black solid;
+}
+.window > .menubar button{
+	margin-top: 2px;
+	margin-left: 2px;
+}
+.window > .menubar > .title{
+	margin-top: -1em;
+	text-align: center;
+	font-size: 85%;
+	text-shadow: 0 1px 2px #fff/*, -1px -1px 1px #fff*/;
+	cursor: default;
+	margin-left: 3.5em;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.window > .statusbar{
+	position: absolute;
+	bottom: 0;
+	height: 1.5em;
+	width: 100%;
+	background-color: #afafaf;
+	border-top: 1px black solid;
+	font-size: 80%;
+}
+.window > .statusbar > .resizer{
+	position: absolute;
+	bottom: 0;
+	right: 1px;
+	height: 1em;
+	width: 1em;
+	background-image: url(imgs/resize.png);
+}
+.window > .content{
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	font-size: 12px;
+}
+
+.window > .statusbar .button-ok,
+.window > .statusbar .button-cancel{
+	position: absolute;
+	right: 15px; bottom: 1px;
+}
+.window > .statusbar .button-cancel{
+	margin-right: 3.5em;
+}
+
+.window.active{
+	box-shadow: #515151 5px 5px 15px, #515151 -5px 5px 15px;
+}
+.window:not([class*="active"]){
+	box-shadow: #515151 3px 3px 7px, #515151 -3px 3px 7px;
+	opacity: 0.7;
+}
+
+.window > .dammy-wrapper{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.window:not([class*="active"]) > .dammy-wrapper{
+	display: block;
+}
+
+.window.maximized{
+	min-width: 100%;
+	min-height: 100%;
+	top: 0 !important;
+	left: 0 !important;
+}
+.window.minimized{
+	max-height: 1.3em;
+	overflow: hidden;
+}
+.window.minimized > .statusbar{
+	display: none;
+}
+
+
+/** joDialog **/
+.dialog > .content{
+	overflow: hidden;
+}
+.dialog > .menubar > .title{
+	margin-left: 1.5em;
+}
+.dialog .message{
+	padding: 5px;
+	line-height: 1.3;
+	max-height: 99%;
+	overflow: auto;
+}
+.input-prompt{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+.local-write-link{
+	display: inline-block;
+	text-align: center;
+	font-size: 130%;
+}
+.local-read-prompt-link{
+	color: blue;
+	text-decoration: underline;
+	cursor: default;
+}
+
+
+/** tab **/
+.tabs{
+	height: 1.5em;
+	cursor: default;
+}
+.tabs > li{
+	float: left;
+}
+.tabs > li > .tab-name{
+	display: block;
+	width: 8em;
+	border: 1px black solid;
+	padding: 5px;
+	text-align: center;
+	overflow: hidden;
+}
+.tabs > li > .tab-content{
+	position: absolute;
+	top: 3em;
+	left: 1em;
+	display: none;
+	padding: 1em;
+}
+.tabs > li[selected] > .tab-name{
+	background-color: blue;
+	color: white;
+}
+.tabs > li[selected] > .tab-content{
+	display: block;
+	width: 90%;
+}
+
+
+
+/** groupbox **/
+.groupbox{
+	position: relative;
+	padding: 0.5em;
+	padding-top: 1em;
+	border: 1px #cfcfcf solid;
+	border-radius: 5px;
+	margin-bottom: 1em;
+}
+.groupbox > .caption{
+	position: absolute;
+	top: -0.4em;
+	left: 3%;
+	background-color: white;
+	padding: 0 5px;
+}
+
+/** form **/
+input[type=checkbox]{
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+
+
+/** menupopup **/
+.menupopup,
+.menupopup ul,
+.menupopup li,
+.menupopup a{
+	background-color: white;
+	cursor: default;
+}
+.menupopup li{
+	position: relative;
+	padding: 0;
+}
+.menupopup a{
+	display: block;
+	font-size: 90%;
+	color: black;
+	text-decoration: none;
+	padding: 0.3em 0.5em;
+}
+.menupopup li:hover > a{
+	background-color: rgb(35, 35, 255) !important;
+	background-image: linear-gradient(top, rgba(255,255,255,0.3),
+										   rgba(255,255,255,0.25) 30%,
+										   rgba(255,255,255,0)         ) !important;
+	color: white;
+}
+.menupopup a.hasChild:after{
+	position: absolute;
+	content: '>';
+	font-size: 90%;
+	vertical-align: middle;
+	right: 5px;
+}
+
+/** sub **/
+.menupopup,
+.menupopup li > ul{
+	position: absolute;
+	top: -3px;
+	left: 95%;
+	width: 15em;
+	border: 1px black solid;
+	background-color: rgba(255, 255, 255, 0.92);
+	box-shadow: #515151 3px 3px 5px;
+	z-index: 99;
+}
+
+/** open/close **/
+.menupopup li > ul{
+	display: none;
+}
+.menupopup li:hover > ul{
+	display: block;
+}
+
+
+/** file picker **/
+.filepicker-filename{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-top: 1.2em;
+}
+.filepicker-filename-input{
+	text-align: left;
+	width: 60%;
+}
+.filepicker-filetree{
+	width: 90%;
+	height: 75%;
+	border: 1px darkblue solid;
+	margin: 0 auto;
+	margin-top: 1.2em;
+	overflow: auto;
+}
+
+
+/** dropbox **/
+.dropbox.dropbox-dragover:after{
+	content: 'Dropping...';
+	text-align: center;
+	margin: auto;
+	padding-top: 10%;
+	background-color: rgba(135, 206, 235, 0.45);
+	position: absolute;
+	top: 0;  left: 0;
+	height: 100%;  width: 100%;
+	display: block;
+	font-size: 220%;
+	font-weight: bold;
+}
+
+
+/** listTree **/
+.listtree{
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+}
+.listtree *{
+	cursor: default !important;
+	box-sizing: border-box;
+}
+.listtree li{
+	margin: 0;
+	padding: 0 0.5em 0 23px;
+	white-space: nowrap;
+}
+
+.listtree li a{
+	display: inline-block;
+	padding: 2px 4px;
+	margin: 1px 0;
+	width: 99%;
+}
+
+.listtree li.hasChild{
+	background: url(imgs/arrow-right.png) no-repeat scroll 10px 0.35em transparent;
+}
+.listtree li.hasChild.opened{
+	background-image: url(imgs/arrow-down.png);
+}
+
+.listtree ul{
+	padding-left: 0.35em;
+	display: none;
+}
+.listtree li:hover > a{
+	outline: 1px blue solid;
+}
+.listtree li.opened:hover > a{
+	outline: none;
+}
+
+.listtree li.opened > ul{
+	display: block;
+	border-left: 1px #969696 dotted;
+}
+.listtree li.selected > a{
+	background-color: blue;
+	color: white;
+}
+
+
+/** Table Tree **/
+.tableTree{
+	margin: 1em;
+	outline: 1px solid black;
+	width: 80%;
+}
+.tableTree td,
+.tableTree tr{
+/*	border: 1px solid #cccccc;*/
+	padding: 5px;
+	position: relative;
+}
+.tableTree .tableTree-header td{
+	background-color: #cccccc;
+	background-image: linear-gradient(top, #ffffff, #cccccc);
+	border-right: 1px #aaaaaa solid;
+	font-weight: bolder;
+	padding-right: 10px;
+}
+
+.tableTree [class^="tableTree-"][class$="-sorted"]{
+	padding-right: 0px;
+}
+.tableTree [class^="tableTree-"][class$="-sorted"]:first-child{
+	padding-right: 10px;
+}
+.tableTree .tableTree-up-sorted:after{
+	content: '';
+	display: inline-block;
+	background-image: url(imgs/arrow-up.png);
+	width: 10px;
+	height: 10px;
+	float: right;
+}
+.tableTree .tableTree-down-sorted:after{
+	content: '';
+	display: inline-block;
+	background-image: url(imgs/arrow-down.png);
+	width: 10px;
+	height: 10px;
+	float: right;
+}
+
+.tableTree [class^='tableTree-row-'].selected{
+	background-color: blue;
+	color: white;
+}
+
+.tableTree-edit-input{
+	display: block;
+	box-shadow: #515151 3px 3px 7px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

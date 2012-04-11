@@ -1,0 +1,6 @@
+[class*="$APPID$"] .menubar{
+	height: 2.3em;
+}
+[class*="$APPID$"] .content{
+	overflow: hidden;
+}

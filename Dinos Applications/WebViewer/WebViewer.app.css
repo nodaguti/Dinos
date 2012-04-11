@@ -1,0 +1,15 @@
+.webviewer-browser-locationbar{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.webviewer-browser-content{
+	width: 99%;
+	height: 99%;
+	border: none;
+	outline: none;
+}
+[class*="$APPID$"] .menubar{
+	height: 3.2em;
+}

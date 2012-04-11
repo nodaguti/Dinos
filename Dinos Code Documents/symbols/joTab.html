@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="generator" content="JsDoc Toolkit" />
+<title>APIリファレンス - joTab</title>
+
+<script type="text/javascript" src="../js/utils.js" ></script>
+<script type="text/javascript" src="../js/class.js" ></script>
+<script type="text/javascript" >
+var constCntTotal = 0;
+var constCntInterit = 0;
+var constCntPrivate = 0;
+var propCntTotal = 0;
+var propCntInterit = 0;
+var propCntPrivate = 0;
+var methodCntTotal = 3;
+var methodCntInterit = 0;
+var methodCntPrivate = 2;
+var eventCntTotal = 0;
+var eventCntInterit = 0;
+var eventCntPrivate = 0;
+
+var symbolAlias = "joTab";
+
+Kw={"clas":{"linkFrame":"フレームあり","linkNoFrame":"フレームなし"}};
+</script>
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/class.css" />
+
+<style type="text/css" >
+.SRCBODY {font-family: 'MS Gothic',monospace; font-size: 12px; color:RGB(48,48,48); line-height: 14px; margin: 0px;}
+.KEYW {color: RGB(0,160,255); font-weight:bold;}
+.COMM {color: RGB(120,192,0)}
+.NUMB {color: RGB(128,99,0)}
+.STRN {color: RGB(220,160,60)}
+.REGX {color: RGB(230,0,0)}
+.LINENUM {border-right: 1px dotted RGB(140,140,140); color: RGB(140,140,140); background-color: RGB(240,240,240); padding: 1px 1px 1px 3px;}
+.DOCCMT {color: RGB(150,150,255)}
+.DOCTAG {color: RGB(90,90,255)}
+
+</style>
+</head>
+<body>
+
+<div id="content" ><div id="contentBase" >
+
+<!-- ============================== class title ============================ -->
+<div id="title" >
+	<div class="indexLink" >
+		<a id="linkNewWnd" href="#" target="_blank" >フレームなし</a> |
+		
+		<a href='../classesindex.html' target='detail'>クラス一覧</a> |
+		<a href='../filesindex.html' target='detail'>ファイル一覧</a>
+	</div>
+	<div id="classAlias" class="aliasFont classNormal titleBg_class">
+		<span class="className classType titleIcon_class classNormal symicon_classes symicon_class">クラス</span><span >joTab</span>
+	</div>
+</div>
+
+<!-- ============================== class summary ========================== -->
+	<div class="description">
+		<div class="classDesc" >
+			
+			
+		</div>
+
+		<table class="descTable" cellspacing="0" >
+			
+
+			
+				<tr><th class="descCaption" >継承関係</th><td>
+				<span class='classNormal bold' >joTab</span>
+				</td></tr>
+			
+
+			
+
+			
+
+			
+			
+			
+			
+			
+			
+				
+				
+				<tr><th class="descCaption">サンプル </th><td><div id="example_2_hl"><pre class="code SRCBODY" ><span class="LINENUM">  1</span> <span class="WHIT">  </span><span class="PUNC">&lt;</span><span class="NAME">ul</span><span class="WHIT"> </span><span class="NAME">id</span><span class="PUNC">=</span><span class="STRN">"tab-example"</span><span class="PUNC">></span><span class="WHIT">                 </span><span class="WHIT"><span class="LINENUM">  2</span> </span><span class="WHIT">    </span><span class="PUNC">&lt;</span><span class="NAME">li</span><span class="PUNC">></span><span class="PUNC">&lt;</span><span class="NAME">a</span><span class="WHIT"> </span><span class="NAME">class</span><span class="PUNC">=</span><span class="STRN">"tab-name"</span><span class="PUNC">></span><span class="NAME">Tab1</span><span class="PUNC">&lt;</span><span class="REGX">/a>   &lt;!-- tab-name というクラスのノードがタブになる --><span class="LINENUM">  3</span>        &lt;div class="tab-contents">&lt;/</span><span class="NAME">div</span><span class="PUNC">></span><span class="WHIT">  </span><span class="COMM">&lt;!-- tab-contents というクラスのノードがタブの中身になる --></span><span class="WHIT"><span class="LINENUM">  4</span> </span><span class="WHIT">    </span><span class="PUNC">&lt;</span><span class="REGX">/li>                               <span class="LINENUM">  5</span>                                         <span class="LINENUM">  6</span>     &lt;li>&lt;a class="tab-name">Tab2&lt;/</span><span class="NAME">a</span><span class="PUNC">></span><span class="WHIT">    </span><span class="WHIT"><span class="LINENUM">  7</span> </span><span class="WHIT">       </span><span class="PUNC">&lt;</span><span class="NAME">div</span><span class="WHIT"> </span><span class="NAME">class</span><span class="PUNC">=</span><span class="STRN">"tab-contents"</span><span class="PUNC">></span><span class="PUNC">&lt;</span><span class="REGX">/div> <span class="LINENUM">  8</span>     &lt;/</span><span class="NAME">li</span><span class="PUNC">></span><span class="WHIT"><span class="LINENUM">  9</span> </span><span class="WHIT">  </span><span class="PUNC">&lt;</span><span class="TOKN"></span></pre><a href="javascript:void(0)" onclick="showExamplePlain(2)" class="exampleLink" >&#8811;プレインテキスト</a></div><div id="example_2_pt" style="display:none;" ><pre class="code SRCBODY" >  <ul id="tab-example">                     <li><a class="tab-name">Tab1</a>   <!-- tab-name というクラスのノードがタブになる -->       <div class="tab-contents"></div>  <!-- tab-contents というクラスのノードがタブの中身になる -->    </li>                                                                           <li><a class="tab-name">Tab2</a>           <div class="tab-contents"></div>     </li>  </ul>                                          new joTab($('tab-example'));</pre><a href="javascript:void(0)" onclick="showExampleHilited(2)" class="exampleLink" >&#8811;ハイライト</a></div></td></tr>
+				
+				
+			
+			
+			
+				<tr><th class="descCaption" >定義</th><td><a href='../symbols/src/C__Users_nodaguti_Desktop_dinos_ui.js.html#line353' title='C:/Users/nodaguti/Desktop/dinos/ui.js'>ui.js</a></td></tr>
+			
+		</table>
+		
+		<div class="viewOptions">
+			
+			<input type="checkbox" id="minimizeInrerits" />他のクラスから継承したメンバを折りたたむ
+			<br />
+			
+			
+			<input type="checkbox" id="hidePrivates" />プライベートメンバを隠す
+			
+		</div>
+	</div>
+
+<!-- ============================== category title 'summary' ==================== -->
+	<div class="spacer" ></div>
+	<table id="smryTop" class="categoryTitle" cellpadding="0" cellspacing="0" ><tr><th><div>概要</div></th><td>
+		
+		<a href="#smryConstructorTop" >コンストラクタ</a> |
+		<span class="disabledLink" >定数</span> |
+		<span class="disabledLink" >プロパティ</span> |
+		<a href="#smryMethodTop" >メソッド</a> |
+		<span class="disabledLink" >イベント</span> |
+		<a href="#dtlTop" >詳細トップ</a> | <a href="#" >ページトップ</a>
+	</td></tr></table>
+
+<!-- ============================== constructor summary ==================== -->
+	
+		<a id="smryConstructorTop" ></a>
+		<table class="summaryTable" cellspacing="0">
+			<caption><div>
+				<span>コンストラクタ</span>
+				<a href="#smryTop" class="upArrow" title="概要トップへ移動" >↑</a>
+			</div></caption>
+			<tbody>
+				<tr>
+					<td class="attributes">&nbsp;</td>
+					<td class="nameDescription" >
+						<div class="floatLeft className fixedFont aliasFont classNormal symicon_classes symicon_class">
+							<a id="smry_constructor" class="bold" href="#constructor" title="タブ" >joTab</a>(ul)
+						</div>
+						<a href='../symbols/src/C__Users_nodaguti_Desktop_dinos_ui.js.html#line353' class='srcLink floatLeft' title='ソースコードを表示'><div class='srcLink_out' onmouseover='hSrcLinkMouseOver(this)' onmouseout='hSrcLinkMouseOut(this)' ></div></a>
+						<div class="description">タブ</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	
+
+<!-- ============================== Namespaces summary (Namespace only) ===================== -->
+	
+
+<!-- ============================== Classes summary (Namespace only) ===================== -->
+	
+
+<!-- ============================== constants summary ===================== -->
+	
+
+
+<!-- ============================== properties summary ===================== -->
+	
+
+
+<!-- ============================== methods summary ======================== -->
+	
+		<a id="smryMethodTop" ></a>
+		<table id="methodSummary" class="summaryTable" cellspacing="0" >
+			<caption><div>
+				<span>メソッド</span>
+				<a href="#smryTop" class="upArrow" title="概要トップへ移動" >↑</a>
+			</div></caption>
+			<tbody>
+			
+				
+
+				<tr class="isPrivate" >
+					<td class="attributes">&lt;private&gt;<br />void</td>
+					<td>
+						<div class="floatLeft fixedFont aliasFont private symicon symicon_method symicon_pri">
+						<a href='../symbols/joTab.html#_onClickTab' title='タブをクリックしたときに呼び出される' id='smry__onClickTab' style='font-weight:bold;'>_onClickTab</a>(event)
+						</div>
+						<a href='../symbols/src/C__Users_nodaguti_Desktop_dinos_ui.js.html#line398' class='srcLink floatLeft' title='ソースコードを表示'><div class='srcLink_out' onmouseover='hSrcLinkMouseOver(this)' onmouseout='hSrcLinkMouseOut(this)' ></div></a>
+						
+						<div class="description">タブをクリックしたときに呼び出される
+						
+						</div>
+					</td>
+				</tr>
+			
+				
+
+				<tr class="isPrivate" >
+					<td class="attributes">&lt;private&gt;<br />void</td>
+					<td>
+						<div class="floatLeft fixedFont aliasFont private symicon symicon_method symicon_pri">
+						<a href='../symbols/joTab.html#init' title='初期化処理' id='smry_init' style='font-weight:bold;'>init</a>(ul)
+						</div>
+						<a href='../symbols/src/C__Users_nodaguti_Desktop_dinos_ui.js.html#line378' class='srcLink floatLeft' title='ソースコードを表示'><div class='srcLink_out' onmouseover='hSrcLinkMouseOver(this)' onmouseout='hSrcLinkMouseOut(this)' ></div></a>
+						
+						<div class="description">初期化処理
+						
+						</div>
+					</td>
+				</tr>
+			
+				
+
+				<tr class="" >
+					<td class="attributes">void</td>
+					<td>
+						<div class="floatLeft fixedFont aliasFont normal symicon symicon_method symicon_nml">
+						<a href='../symbols/joTab.html#select' title='タブを変更する' id='smry_select' style='font-weight:bold;'>select</a>(tab)
+						</div>
+						<a href='../symbols/src/C__Users_nodaguti_Desktop_dinos_ui.js.html#line408' class='srcLink floatLeft' title='ソースコードを表示'><div class='srcLink_out' onmouseover='hSrcLinkMouseOver(this)' onmouseout='hSrcLinkMouseOut(this)' ></div></a>
+						
+						<div class="description">タブを変更する
+						
+						</div>
+					</td>
+				</tr>
+			
+			</tbody>
+		</table>
+
+		
+	
+
+<!-- ============================== events summary ======================== -->
+	
+
+
+<!-- ============================== category title 'details' ==================== -->
+	<div class="spacer" ></div>
+	<table id="dtlTop" class="categoryTitle" cellpadding="0" cellspacing="0" ><tr><th><div>詳細</div></th><td>
+		<a href="#dtlConstructorTop" >コンストラクタ</a> |
+		<span class="disabledLink" >定数</span> |
+		<span class="disabledLink" >プロパティ</span> |
+		<a href="#dtlMethodTop" >メソッド</a> |
+		<span class="disabledLink" >イベント</span> |
+		<a href="#smryTop" >概要トップ</a> | <a href="#" >ページトップ</a>
+	</td></tr></table>
+
+<!-- ============================== constructor details ==================== -->
+	
+		<a id="dtlConstructorTop" ></a>
+		<div class="details">
+			<div class="sectionTitle"><div>
+				<span>コンストラクタ</span>
+				<a href="#dtlTop" class="upArrow" title="詳細トップへ移動" >↑</a>
+			</div></div>
+			<div id="constructor" class="smallIndent" >
+				<div class="floatLeft className fixedFont aliasFont classNormal symicon_classes symicon_class" >
+				<span class="attr"></span>
+				<span class="bold">joTab</span>(ul)
+				</div>
+				<a href='../symbols/src/C__Users_nodaguti_Desktop_dinos_ui.js.html#line353' class='srcLink floatLeft' title='ソースコードを表示'><div class='srcLink_out' onmouseover='hSrcLinkMouseOver(this)' onmouseout='hSrcLinkMouseOut(this)' ></div></a>
+				<a href="#smry_constructor" class="upArrow" title="概要へ移動" >↑</a>
+			</div>
+		</div>
+
+		<div class="memberDesc" >
+			タブ
+			<table class="detailItemTable" cellspacing="0" >
+				
+					<tr><td class="detailCaption descCaption">引数</td><td>
+					<table class="paramTable" cellspacing="0" cellpadding="0" >
+
+					
+						<tr><td class="paramAttr attr" >HTMLULElement</td>
+						<td class="paramName" ><b>ul</b></td>
+						<td class="paramDesc" >タブ化するUL要素の参照 <br>                          所定の構造をしている必要がある <br>                          詳細はサンプルを参照
+						
+						</td></tr>
+					
+
+					</table>
+					</td></tr>
+				
+				
+				
+			</table>
+		</div>
+		<div class="spacer" ></div>
+	
+
+<!-- ============================== constant details ========================== -->
+	
+
+<!-- ============================== property details ========================== -->
+	
+
+<!-- ============================== method details ========================= -->
+	
+		<a id="dtlMethodTop" ></a>
+		<div id="methodDetail" >
+		<div class="sectionTitle"><div>
+			<span>メソッド</span>
+			<a href="#dtlTop" class="upArrow" title="詳細トップへ移動" >↑</a>
+		</div></div>
+		
+			
+
+			<div class="isPrivate" >
+			<a id="_onClickTab"> </a>
+			<div class="smallIndent" >
+				<div class="floatLeft symicon symicon_method symicon_pri" >
+				<span class="attr">&lt;private&gt; void</span>
+				<span class="fixedFont aliasFont private" >
+					<span class="bold">_onClickTab</span>(event)
+				</span>
+				</div>
+				<a href='../symbols/src/C__Users_nodaguti_Desktop_dinos_ui.js.html#line398' class='srcLink floatLeft' title='ソースコードを表示'><div class='srcLink_out' onmouseover='hSrcLinkMouseOver(this)' onmouseout='hSrcLinkMouseOut(this)' ></div></a>
+				<a href="#smry__onClickTab" class="upArrow" title="概要へ移動" >↑</a>
+			</div>
+			<div class="memberDesc" >
+				タブをクリックしたときに呼び出される
+				
+				<table class="detailItemTable" cellspacing="0">
+					
+						<tr><td class="detailCaption descCaption">引数</td><td>
+						<table class="paramTable" cellspacing="0" cellpadding="0" >
+
+						
+							<tr><td class="paramAttr attr" >Event</td>
+							<td class="paramName" ><b>event</b></td>
+							<td class="paramDesc" >
+							
+							</td></tr>
+						
+
+						</table>
+						</td></tr>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</table>
+			</div>
+			<hr />
+			</div>
+		
+			
+
+			<div class="isPrivate" >
+			<a id="init"> </a>
+			<div class="smallIndent" >
+				<div class="floatLeft symicon symicon_method symicon_pri" >
+				<span class="attr">&lt;private&gt; void</span>
+				<span class="fixedFont aliasFont private" >
+					<span class="bold">init</span>(ul)
+				</span>
+				</div>
+				<a href='../symbols/src/C__Users_nodaguti_Desktop_dinos_ui.js.html#line378' class='srcLink floatLeft' title='ソースコードを表示'><div class='srcLink_out' onmouseover='hSrcLinkMouseOver(this)' onmouseout='hSrcLinkMouseOut(this)' ></div></a>
+				<a href="#smry_init" class="upArrow" title="概要へ移動" >↑</a>
+			</div>
+			<div class="memberDesc" >
+				初期化処理
+				
+				<table class="detailItemTable" cellspacing="0">
+					
+						<tr><td class="detailCaption descCaption">引数</td><td>
+						<table class="paramTable" cellspacing="0" cellpadding="0" >
+
+						
+							<tr><td class="paramAttr attr" >HTMLULElement</td>
+							<td class="paramName" ><b>ul</b></td>
+							<td class="paramDesc" >
+							
+							</td></tr>
+						
+
+						</table>
+						</td></tr>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</table>
+			</div>
+			<hr />
+			</div>
+		
+			
+
+			<div class="" >
+			<a id="select"> </a>
+			<div class="smallIndent" >
+				<div class="floatLeft symicon symicon_method symicon_nml" >
+				<span class="attr">void</span>
+				<span class="fixedFont aliasFont normal" >
+					<span class="bold">select</span>(tab)
+				</span>
+				</div>
+				<a href='../symbols/src/C__Users_nodaguti_Desktop_dinos_ui.js.html#line408' class='srcLink floatLeft' title='ソースコードを表示'><div class='srcLink_out' onmouseover='hSrcLinkMouseOver(this)' onmouseout='hSrcLinkMouseOut(this)' ></div></a>
+				<a href="#smry_select" class="upArrow" title="概要へ移動" >↑</a>
+			</div>
+			<div class="memberDesc" >
+				タブを変更する
+				
+				<table class="detailItemTable" cellspacing="0">
+					
+						<tr><td class="detailCaption descCaption">引数</td><td>
+						<table class="paramTable" cellspacing="0" cellpadding="0" >
+
+						
+							<tr><td class="paramAttr attr" >Tab</td>
+							<td class="paramName" ><b>tab</b></td>
+							<td class="paramDesc" >
+							
+							</td></tr>
+						
+
+						</table>
+						</td></tr>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</table>
+			</div>
+			
+			</div>
+		
+
+		<div class="spacer" ></div>
+		</div>
+
+	
+
+<!-- ============================== event details ========================= -->
+	
+
+	<div class="border" ></div>
+
+<!-- ============================== footer ================================= -->
+	<div class="fineprint">
+	Documentation generated by <a href='http://code.google.com/p/jsdoc-toolkit/' target='_blank'>JsDoc Toolkit 2.3.2</a> (template:<a href='http://www12.atwiki.jp/aias-jsdoctoolkit/' target='_blank'>aias-frame 1.6.1</a>) on Fri Oct 14 2011 15:22:17 GMT+0900 (JST)
+	</div>
+
+</div></div>
+</body>
+</html>
