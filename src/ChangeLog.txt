@@ -1,0 +1,481 @@
+20120411/1738
+[joCore] 指定したファイルの中身が空の時 joCore.IO.Dinos.read が空文字でなくundefinedを返してしまうバグを修正
+
+20111014/1506
+[System] IE9で起動するようになった（修正点大杉なので列挙できない）
+[joCore] joCore.utils.inherit で継承するようにした
+
+20110916/1245
+[Code] disk.xmlのルート要素に xmlns='http://www.w3.org/1999/xhtml' 属性を追加（Operaで起動するようになった）
+
+20110915/1824
+[joTab] 要素内空白テキストノードが入っていた場合にタブを生成できないバグを修正
+
+20110910/1758
+[Code] HTML5に準拠させた
+
+20110909/1813
+[Clock] 分/秒を２桁で固定表示するようにした
+
+20110909/1734
+[joCore] joCore.logger.message, debug, info, warning 実装
+[joCore] joCore.logger.error が複数引数に対応
+
+20110909/1600
+[joTableTree] nonEditable, nonSelectableオプション追加
+[joTableTree] 項目が選択できるようになった
+
+20110908/1550
+[Finder] ソート関数がBoolean値ではなくNumber値を返すようにした（Safariでソートされるようになった）
+[joUI] ソート関数がBoolean値ではなくNumber値を返すようにした（Safariでソートされるようになった）
+
+20110907/1744
+[joCore] joCore.toArray -> joCore.utils.toArray, joCore.textToHTML -> joCore.utils.sanitizeHTML, joCore.getUniqueID -> joCore.utils.getUniqueID
+[joCore] joCore.fixDegit, joCore.analyzeByteSize を実装
+
+20110907/1633
+[joEvent] joEvent.fireEventでコールバック側にデータを渡せるようになった（第三引数dataで指定）
+
+20110906/1535
+[Finder] Finder変更リアルタイム反映システム
+
+20110903/1647
+[joCore] joCore.IO.Dinos.read でブラウザがinnerTextを実装していない場合にtextContentを使うようにした
+
+20110903/1604
+[joWindow] minimized, maximized, activeの状態を表すのに独自拡張属性を使わずclassを設定するようにした
+
+20110903/1554
+[joWindow] 非アクティブなウィンドウにも影を付けた
+[joUI] joUI.menupopup の選択時スタイルにグラデーションを用いるようにした
+[Menubar] メニューバーにjoUI.menupopupのスタイルを適用するようにした
+
+20110903/1320
+[joUI] joUI.tableTree でソートアイコンが出ているときに列の幅が変わってしまうバグを修正
+
+20110902/1748
+[joUI] joUI.tableTree を実装
+
+20110830/1139
+[joWindow] setAppropriateSize()を呼び出すとbutton/inputがすべてdisplay:blockになってしまうバグを修正
+
+20110827/1548
+[Menubar] 右端メニューに対応
+[Clock] 作成
+
+20110827/1233
+[joListTree] multipleオプションが正しく動作していなかったバグを修正
+[TextEditor] Open...でのファイル選択を複数選択できるようにした
+[TextEditor] 起動時にエラーが出るバグを修正 
+
+20110827/1223
+[joListTree] 実装（joUI.listTree）
+[joFilePicker] ファイルもフォルダと誤って判定されていたバグを修正
+
+20110827/0839
+[joCore] joCore.Node.toggleClass を実装
+
+20110826/1102
+[Finder] 「このアプリケーションで開く」でどの項目を選んでも最後の項目のアプリケーションで開いてしまっていたバグを修正
+
+20110826/1045
+[joUI] joUI.dropbox で FileReader.readAsText の第二引数が正しく設定されていなかったバグを修正（GoogleChromeで正しく動作するようになった）
+
+20110826/1033
+[joWindow] joWindow.displayが正しく初期化されていなかったバグを修正（他のウィンドウによって上書きされる恐れがあった）
+[joEvent] joEvent._onResize でリサイズ後のサイズが正しくリサイズした要素に伝達されていなかったバグを修正
+[joCore] joCore.UI を　joUI に改名
+
+20110825/1539
+[ActivityMonitor] 作成
+
+20110825/1237
+[SoftwareInstaller] インストーラー作成、アプリケーションの自動更新をするようになった
+
+20110825/0925
+[joCore] joCore.IO.Network.readCrossDomain を実装
+
+20110825/0832
+[Code] for(i in Object) によってグローバル変数を汚染していたのを修正
+
+20110820/1055
+[joAppManager] アプリケーション随時読み込みシステムの導入
+[joAppManager] アプリケーション完全ID管理システムの導入
+[joFileManager] 重複チェックのエラーダイアログを出さないようにした
+
+20110819/1044
+[joDialog] param.message, param.application 以外はすべて必須項目ではなくなった
+
+20110819/1043
+[joFileManager] ファイル/フォルダ作成時にすでに同名ファイルがある場合は上書きするようにした
+[joFileManager] リネーム/移動時に同名ファイルがある場合はエラーを出すようにした
+
+20110819/0942
+[joWindow] ウィンドウがアクティブにならないままになることがあるバグを修正
+
+20110809/1441
+[joEvent] (dblclick-mod) 短時間で異なる要素をクリックしてもダブルクリックとしたと判定されてしまうバグを修正
+
+20110806/1303
+[joCore] joCore.Node.addStyle のセミコロン補正が正しく行われていなかったバグを修正
+[joCore] joCore.Node.addStyle でスタイルを追加する前に同じプロパティを削除するようにした
+[joCore] joCore.Node.removeStyle がプロパティ名を配列形式またはオブジェクト形式で指定できるようにし、値を指定しなくても削除できるようになった
+
+20110806/1212
+[joContextMenu] joContextMenu.unset を実装
+[joWindow] joWindow.moveTo を実装
+[TextEditor] エディター部分でブラウザデフォルトのコンテキストメニューが表示されるようにした
+[WebViewer] ロケーションバーの部分でブラウザデフォルトのコンテキストメニューが表示されるようにした
+
+20110806/1152
+[joAppManager] アプリケーション読み込み時のエラーをさらに詳細に出力するようにした
+
+20110805/1516
+[Finder] アイコンをダブルクリックしたとき、マウスがある位置にウィンドウが開くと、アイコンがドラッグ状態のままになるバグを修正
+[Finder] アイコンのドロップに失敗したとき、アイコンの位置がおかしくなるバグを修正
+
+20110803/0852
+[joCore] 起動オプションをつけた（joCore.settings.NO_WAIT, joCore.settings.BOOT_MODE）
+
+20110803/0818
+[System] #displayな要素がbody以外の場合でも正しく動作するようにした
+
+20110729/1224
+[Finder] 「情報を見る」のファイルサイズを単なるバイト表示から大きさに応じてMBなどを使うようにし、同時にバイト表示も併記するようにした
+
+20110729/0948
+[joFilePicker] 項目上でカーソルがテキスト選択になってしまうのを修正
+[joWindow] コンテキストメニューをデフォルトで空になるようにした
+[joWindow] タイトルのシャドウを修正
+[Finder] アイコンの名前のシャドウを修正
+
+20110729/0919
+[joFilePicker] 文字コード順にソートするようにした
+
+20110728/1359
+[joCore] 起動時にjoBootedイベントが発火するようにした
+
+20110728/1319
+[joFileManager] disk.xmlがjoCore.IO.Network.readで読み込めないときはjoCore.IO.Local.readで再試行するようにした（GoogleChromeで起動するようになった）
+[joCore] joCore.UI.prompt にmultilineオプションを追加
+[joCore] joCore.IO.Local.readで、Drag and Dropを実装していないブラウザではjoCore.UI.promptで読み込むようにした
+[joCore] 起動画面を作成
+
+20110726/1119
+[Finder] アプリケーションに関連付けられていないファイルを開こうとした時にどのアプリケーションで開くかユーザーに尋ねるようにした
+
+20110725/1227
+[ImageViewer] canvasに移行
+[AudioPlayer] AudioPlayer作成
+
+20110722/1412
+[ImageViewer] 画像の拡大/縮小/元のサイズに戻すを実装
+
+20110719/1536
+[Finder] アイコンをとりあえずアルファベット順に並べるようにした（あとで選択できるようにする）
+
+20110719/1502
+[Finder] フォルダウィンドウ内のコンテキストメニューがデスクトップのコンテキストメニューになってたのを修正
+[Finder] Update Desktopメニューを追加
+[ImageViewer] ImageViewer作成
+
+20110719/1342
+[Finder] dammyWindowを廃止
+[joCore] joCore.UI.select を実装
+
+20110716/1539
+[Finder] 「情報を見る」ウィンドウを複数開いたときにウィンドウの反応が無くなるバグを修正
+[PrefManager] ウィンドウがアクティブになったままになるバグを修正
+
+20110716/1455
+[joCore] textToDOMがtext/htmlな文字列を変換できなかったのを修正
+[joWindow] addContent/addStatusbar/addMenubarで文字列を渡した場合でも正しくDOMに追加するようになった
+
+20110716/1439
+[Finder] joFinderWindow.updateIconsが引数なしでも動作するようになった
+
+20110713/1250
+[Finder] アプリケーションファイルをダブルクリックで実行できるようにした
+
+20110713/1200
+[WebViewer] メニューバーのボタンが反応しないバグを修正
+
+20110709/1600
+[Finder] Firefox 4+でダブルクリックしてもアイコンが開かないバグを修正
+[joEvent] addEventにdblclick-modを追加（mousedownでdblckickを仮再現）
+[TextEditor] ファイルを新方式で保存するようにした
+
+20110604/1657
+[joCore][joAppManager] アプリケーションをDinosのディスクにインストールするようにした
+[joCore] joCore.UIにdropboxを実装
+[joCore] joCore.welcome実装
+[joCore] joCore.IO以下を整理
+[joCore] 終了時に警告を出すようにした
+[Other] その他いろいろ（多すぎて忘れた；）
+
+20110520/1903
+[joCore] joCore.UI.menupopup でサブメニューが画面外に出てしまわないようにした
+
+20110514/1757
+[joCore] 起動時にエラーが発生した場合、ダイアログを表示するようにした
+
+20110514/1742
+[joDialog] param.resizable を実装
+[main.css] すべての要素を word-break: break-all; word-wrap: break-word; するようにした
+
+20110514/1721
+[joTab] タブの中身をクリックしたとき、そのタブが閉じてしまうバグを修正
+
+20110514/1713
+[joDesktop] ウィンドウサイズを変更したとき、デスクトップのアイコンが広げた部分に置けないバグを修正
+[joDesktop] 上に関連してウィンドウサイズ変更時にアイコンを追従するようにした
+
+20110514/1657
+[joWindow] ウィンドウタイトルがボタン類にかぶらないように修正
+[Finder.app] ダミーウィンドウの初期位置を変更
+
+20110514/1629
+[Finder.app] 「このアプリケーションで開く」メニューを実装
+[joContextMenu] コンテキストメニューが空になってしまうことがあるバグを修正
+
+20110513/1748
+[Finder.app] 複数のアイコンを選択したときの処理を実装
+[joPref] 設定をDinosディスク上に保存するようにした
+[WebViewer] さまざまな改善
+
+20110506/1751
+[Finder.app] デフォルトアプリケーションで開けるようにした
+
+20110505/1818
+[joCore] joCore.IO.Local.read を実装
+
+20110505/1530
+[Finder.app] Finder以外にもアイコンがドロップできるような仕組みを作った（element.owner.onDrop(icon, x, y)）
+[Finder.app] その副産物として、Finderのウィンドウが重なっている時、上のウィンドウのアイコンを移動させると下のウィンドウへファイルが移動してしまうバグを修正
+[ChangeLog] ChangeLogの時系列順を逆にした（昔→最近を最近→昔に）
+
+20110430/1722
+[Finder.app] コンテキストメニュー内、「削除」「エイリアス...」を実装
+
+20110429/1947
+[joWindow] ウィンドウを出す時、座標未指定ならば最も前面にあるウィンドウから少しずれたところに表示するようにした
+
+20110429/1808
+[joCore] joCore.IO.write が上書きを警告できるようにした。それに伴って書き込んだファイルのノードを返すのを止めた。
+
+20110429/1848
+[joFilePicker] ファイルピッカーを実装（Save, Openモード）
+[TextEditor.app] ファイルのオープン、セーブをファイルピッカーを使うようにした
+
+20110426/1733
+[Finder.app] アイコンの複数選択を実装
+[Finder.app] Finderのウィンドウ以外の上に移動してもなにも反応しないようにした
+
+20110425/1733
+[Finder.app] ファイル名の変更を実装
+
+20110423/1735
+[Finder.app] ファイルの情報が見れるようにした
+
+20110423/1657
+[joContextMenu] コンテキストメニューが見えなくなることがないように位置を補正するようにした
+
+20110423/1611
+[joEvent] (r|l|middle)mouse(down|up|move)を実装
+
+20110423/1457
+[Finder.app] 新規フォルダの作成を実装
+
+20110423/1358
+[Finder.app] 絶対パスで指定したフォルダの中へファイルを移動できなかったバグを修正
+
+20110423/1328
+[joCore] joCore.utils.getUniqueID, joCore.Node.getUniqueID を実装
+[joCore] joCore.Node.getElementsByPosition がソートした結果を返すようにした
+[joEvent] joEvent.removeEventを実装
+[joEvent] メモリリークを修正
+
+20110418/1627
+[joCore] joCore.Node.getUniqueID, joCore.utils.getUniqueID, joCore.logger.timer.start, joCore.logger.timer.end を実装
+[joCore] joCore.IO.output を joCore.IO.Local.write へ移動
+
+20110416/1710
+[joEvent] joEvent.addEvent でイベントタイプrclick,middleclick,lclickを実装
+[joEvent] joEvent.addEvent で複数イベントの同時設定を実装
+
+20110416/1600
+[Menubar.app] オブジェクト形式によるメニューの指定を可能にした
+[Menubar.app] ２階層以上のメニューをサポート
+
+20110416/1404
+[joCore] joCore.setAttributes でinnerHTMLによる追加を可能にした (:child)
+
+20110414/1453
+[joCore] joCore.Node.createNode, joCore.Node.setAttributes でテキストノードを追加できるようにした (:context)
+
+20110412/1716
+[Finder.app] デスクトップのアイコンの配置をMac風にした（右上開始にした）
+
+20110412/1710
+[Finder.app] 「.」で始まるファイルの表示に関する設定を作成
+
+20110411/1738
+[joCore] joCore.Node.getFormValue, joCore.Node.setFormValue を実装
+
+20110409/1320
+[Finder.app] フォルダのパスを絶対パスで指定できるようにした
+[Finder.app] Finder.Iconの引数を整理
+
+20110407/1456
+[joCore] joCore.output を実装
+[joWindow] param.related を実装
+
+20110407/1316
+[joCore] joCore.UI.tab をコンストラクタからクラスに変更
+[joCore] joCore.window, joCore.dialog, joCore.confirm, joCore.prompt を実装
+[joDialog] param.messageを無指定の場合にundefinedと表示されていたのを修正
+[joWindow] joWindow.setContent, joWindow.addContent を実装
+[joTab] タブのスタイル修正
+
+20110401/2157
+[System] xcss.jsを導入
+[joWindow] windowの影を変更
+
+20110401/2129
+[Finder.app] FINDER_ICON_WIDTH, FINDER_ICON_HEIGHT, FINDER_CEL_WIDTH, FINDER_CEL_HEIGHTの各値をベタ書きで指定していたのをjoPrefManagerから値を取得するように変更
+
+20110401/2107
+[System] UKIを導入
+[PrefManager.app] preference属性対応
+[joPrefManager] joPrefManager.setKey() -> setValue(), joPrefManager.getKey() -> getValue()
+
+20110401/1236
+[joCore] joCore.UI.tab を実装
+
+20110401/1202
+[joCore] joCore.Node.hasClass() で要素がclass属性を持っていないときにエラーになるのを修正
+
+20110331/1252
+[joCore] joCore.IO.read() がlocalhost上に存在しないファイルをアクセスしたときに正しく deferred.fail() するようになった
+
+20110329/1644
+[joAppManager] App.start()が実行されないバグを修正
+
+20110329/1445
+[joPrefManager] joPrefManagerを実装
+[Sytem] json2.jsを読み込むように
+[joAppManager] アプリケーション読み込み時に実行される関数をApp.start()からApp.onloadへ変更
+[joAppManager] アプリケーション実行時にApp.start()が実行されるようにした
+
+20110326/1640
+[joCore] window.console が有効なときに joCore.logger.log が正しくログを出力するようになった
+
+20110325/2007
+[Code] main.jsをcore.js, window.js, filesystem.js, event.js, application.jsに分割
+[System] ResourcesフォルダをLibrariesフォルダに改名
+[joCore] joCore. (craeteNode|getNodesByPosition|moveNode|deleteNodes|setAttributes|addStyle|addClass|removeClass|hasClass|textToDOM|DOMToText|getNodeRect) をjoCore.Node以下に移動
+[joCore] joCore.logger.error がエラーオブジェクトの全プロパティを出力するようにした
+
+20110325/1419
+[joCore] joCore.createNode で空の名前空間を持つノードを作成できなかったのを修正
+
+20110324/1528
+[Finder.app] ウィンドウのタイトル上, アイコンの名前上でカーソルの形が変わらないようにした
+
+20110324/1512
+[Finder.app] dinos:// にあるフォルダを開けないバグを修正
+[Finder.app] dinos:// へファイル/フォルダを移動できないバグを修正
+
+20110324/1509
+[joCore] joCore.getNodesByPosition が常に#displayな要素を含めて返してしまっていたのを修正
+
+20110324/1457
+[Finder.app] dinos://Applications/, dinos://Desktop/, dinos://Documents/ にそれぞれ固有のフォルダアイコンをつけた
+
+20110324/1442
+[System] ファイル/フォルダのアイコンを刷新
+[Finder.app] アイコンのサイズを適正に処理するようにした(background-size)
+[joDialog] ダイアログでの行間を広げた
+
+20110323/1645
+[joCore] joCore.logger.log, joCore.logger.error を実装, window.console を廃止
+[joCore] joCore.createNode が名前空間を指定してノードを作成できるようになった
+[joCore] joCore.createNodesFromText を廃止
+[Finder.app] Finderでフォルダのアイコンを移動/クリックしたときに着地先がおかしくなるバグを修正
+[joEvent] joResizeStart, joResize, joResizeEndイベントが適正な時間に発火するようにした
+[Code] コード/コメントの整理
+
+20110323/1346
+[joAppManager] アプリケーションを読み込むときに無名関数でラップして実行するようにした
+[joAppManager] アプリケーションはjoApps.appNameでアクセスするようにした
+
+20110320/1653
+[Menubar.app] About OS... からThanksを出せるようにした
+
+20110320/1650
+[Menubar.app] About OS... からChange Logを出せるようにした
+
+20110316/1315
+[Finder.app] dinos:// をFinderで表示したときにメニューバーの表示がおかしくなるのを修正
+
+20110316/1110
+[System] Startup.app を削除
+[joAppManager] 起動時に読み込んだアプリケーションのアイコンを自動で dinos://Applications/ に作成するようにした
+
+20110314/1640
+[joAppManager] joAppManager.register を廃止
+
+20110314/1625
+[Finder.app] デスクトップ左上のアイコンが正常にクリックできなかったバグを修正
+
+20110314/1600
+[Finder.app] フォルダを自分自身へ移動できないようにした
+[Finder.app] 移動できないところへ移動させようとしたとき、ドラッグ前の位置へ戻すようにした
+[Finder.app] フォルダの上へドラッグした場合、フォルダの中へ移動するようにした
+
+20110311/2110
+[Finder.app] 自分自身の子フォルダの中へ移動しようとするとエラーを出すようにした
+
+20110311/2000
+[joFileManager] joFileManager.move, joFileManager.rename, joFileManager.deleteFile を実装
+
+20110311/1440
+[Finder.app] フォルダ間のファイルの移動を実装
+
+20110311/1340
+[joCore] joCore.getElementsByPosition を実装
+
+20110310/1335
+[joWindow] ウィンドウがアクティブになったままになることがあるバグを修正
+
+20110310/1125
+[main.css] ボタン（[class^=button]な要素）が押された時に色が変化するようにした
+
+20110310/1115
+[Finder.app] アイコンが選択できるようになった
+[Finder.app] disk.xmlでの出現順が前のアイコンをドラッグしたときに、出現順が後ろのアイコンの下に隠れてしまってドラッグできなくなるバグを修正
+
+20110310/1050
+[joCore] joCore.addClass, joCore.removeClass, joCore.hasClass を実装
+
+20110310/1030
+[Finder.app] ウィンドウ内でアイコン量がウィンドウの高さを超えたときにスクロールできないバグを修正
+
+20110309/1430
+[Finder.app] ウィンドウ内でアイコンの表示可能領域がウィンドウ幅を超えてしまうことがあるバグを修正
+
+20110309/1330
+[Finder.app] デスクトップのアイコンの配置がおかしかったのを修正
+
+20110309/1300
+[Finder.app] ウィンドウ内でフォルダを移動したときにフォルダのアイコン情報が更新されないバグを修正
+
+20110306/1500
+[Finder.app] ウィンドウ内でアイコンをD&Dした時に正しく移動するように修正
+
+20110227/1606
+[Finder.app] アイコンを移動したときに、グリッドへの移動がおかしかったのを修正
+
+20110227/1155
+[Code] 予約語が変数等に使われていたのを修正（Safariで起動するようになった）
+[joWindow] ウィンドウを消したときに他のウィンドウがアクティブになるようにした

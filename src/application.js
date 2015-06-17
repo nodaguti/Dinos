@@ -17,7 +17,7 @@ var joAppManager = {
 	apps: [],
 	
 	/**
-	　* 起動時に開くアプリケーション
+	 * 起動時に開くアプリケーション
 	 * @type Array
 	 */
 	startup: [],

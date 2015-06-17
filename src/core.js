@@ -146,6 +146,25 @@ var joCore = {
 			//welcomeを表示する
 			joCore.welcome();
 			
+			//tableTree test
+			var dialog = joUI.dialog({
+				height: 200,
+				width: 200,
+				application: 'dinos.finder',
+				title: 'test',
+				resizable: true
+			});
+			
+			var table = new joTableTree([
+				[ 'A', 'B', 'C' ],
+				[ 'data a-1', 'data b-1', 'data c-1' ],
+				[ 'data a-2', 'data b-2', 'data c-2' ],
+				[ 'data a-3', 'data b-3', 'data c-3' ],
+				[ 'data a-4', 'data b-4', 'data c-4' ],
+				[ 'data a-5', 'data b-5', 'data c-5' ],
+				[ { noneditable: true, value: 'Test' }, 12, 25 ],
+			], dialog.display.content, null);
+			
 			//起動を通知
 			joEvent.fireEvent('joBooted', window.document);
 		}).
@@ -156,7 +175,7 @@ var joCore = {
 					  '<h2>詳細情報</h2><div style="text-align:left;margin: 0 1em;">';
 
 			var erObj = joCore.logger._errorToObject(e);  //error object
-			for(var i in erObj){		
+			for(var i in erObj){
 				mes += '<b>' + i + '</b> : ' + joCore.utils.sanitizeHTML(erObj[i], true) + '<br />';
 			}
 

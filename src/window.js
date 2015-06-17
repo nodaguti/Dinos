@@ -154,7 +154,7 @@ joWindow.prototype = {
 		
 		
 		//大きさ測定
-		var rect = joCore.Node.getNodeRect(div);	
+		var rect = joCore.Node.getNodeRect(div);
 		joCore.Node.remove(div);
 		
 		//補正
